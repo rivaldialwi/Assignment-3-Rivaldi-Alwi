@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid 19</title>
+</head>
+<body>
+<!-- Navbar -->
+<div class="nav">
+  <p class="h3">Berita Covid-19</p>
+</div>
+<!-- Tutup Navbar -->
+
+<!-- Content -->
+<div class="container">
+  <div class="big-box">
+    <h2>COVID-19 TRACKER</h2>
+    <div class="form-container">
+      <select id="pilih-negara">
+        <option value="" id="option">-- Pilih Negara --</option>
+      </select>
+      <button class="button" onclick="cekCovid()">Cek COVID-19</button>
+    </div>    
+    <div class="kotak-data">
+      <div class="data">
+        <img src="img/aktif.png" alt="error" class="img-aktif">
+        <h2>Active Cases</h2>
+        <p id="active-cases">0</p>
+      </div>
+
+      <div class="data new">
+        <img src="img/new.png" alt="error" class="img-new">
+        <h2>New Cases</h2>
+        <p id="new-cases">0</p>
+      </div>
+
+      <div class="data recovered">
+        <img src="img/recovered.png" alt="error" class="img-recovered">
+        <h2>Recovered Cases</h2>
+        <p id="recovered-cases">0</p>
+      </div>
+    </div>
+
+    <div class="kotak-data">
+      <div class="data total">
+        <img src="img/total.png" alt="error" class="img-total">
+        <h2>Total Cases</h2>
+        <p id="total-cases">0</p>
+      </div>
+
+      <div class="data death">
+        <img src="img/death.png" alt="error" class="img-death">
+        <h2>Total Deaths</h2>
+        <p id="death-cases">0</p>
+      </div>
+
+      <div class="data tes">
+        <img src="img/test.png" alt="error" class="img-test">
+        <h2>Total Tests</h2>
+        <p id="test-cases">0</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tutup Content -->
+
+</body>
+<script src="main.js"></script>
+</html>

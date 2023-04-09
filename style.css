@@ -1,0 +1,191 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #FF6000;
+}
+
+/* Style untuk navbar */
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 8vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style untuk judul pada navbar */
+  .h3 {
+    font-size: 30px;
+    margin-left: 40px;
+  }  
+  
+  /* Style untuk kontainer */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  /* Style untuk kotak besar */
+  .big-box {
+    background-color: #FFA559;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 15px #4cec02;
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Style untuk judul pada kotak besar */
+  .big-box h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  /* Style untuk kotak-kotak di dalam kotak besar */
+  .kotak-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .data {
+    background-color: #2E8B57;
+    padding: 20px;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .kotak-data .data {
+    margin: 15px;
+  }
+  
+  /* Style untuk gambar pada kotak data */
+  .data img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style untuk judul pada kotak data */
+  .data h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  /* Style untuk angka pada kotak data */
+  .data p {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .button {
+    width: 200px;
+    height: 38px;
+    background-color: #00d6a7;
+    border-radius: 35px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+  }
+  
+  .button:hover {
+    background-color: #00f7b9;
+    cursor: pointer;
+  }
+  
+  select {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #555;
+  }
+  
+  /* Styling option element */
+  option {
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #555;
+  }  
+  
+  .data.new{
+    background-color: #3CB371;
+  }
+
+  .data.recovered{
+    background-color: #00f7b9;
+  }
+
+  .data.total{
+    background-color: #1afaaf;
+  }
+
+  .data.death{
+    background-color: #beffa9;
+  }
+
+  .data.tes{
+    background-color: #fff;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .kotak-data {
+      flex-direction: column;
+    }
+    
+    .data {
+      flex-basis: 100%;
+      margin: 5px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .big-box {
+      width: 90%;
+    }
+    
+    .h3 {
+      font-size: 24px;
+    }
+    
+    .data p {
+      font-size: 18px;
+    }
+    
+    .button {
+      width: 150px;
+      height: 30px;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+  }
+  
